@@ -18,7 +18,8 @@ var BudgetController = (function() {
 let CalculateTotal=((type)=>{
 let sum=0;
 data.allitems[type].forEach((x)=>{
-    sum=sum+x.value;
+    console.log(sum,x);
+    sum=sum+ parseInt(x.value);
   Number.parseInt(sum)
 })
 data.total[type]=sum
